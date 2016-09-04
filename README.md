@@ -1,12 +1,7 @@
-# cyc
+# tk-cyc
 
-[![https://img.shields.io/npm/v/cyc-cli.svg?style=flat-square](https://img.shields.io/npm/v/cyc-cli.svg?style=flat-square)](https://www.npmjs.com/package/cyc-cli)
-[![https://img.shields.io/npm/dt/cyc-cli.svg?style=flat-square](https://img.shields.io/npm/dt/cyc-cli.svg?style=flat-square)](https://www.npmjs.com/package/cyc-cli)
-[![https://img.shields.io/npm/l/cyc-cli.svg?style=flat-square](https://img.shields.io/npm/l/cyc-cli.svg?style=flat-square)](https://www.npmjs.com/package/cyc-cli)
+*tk-cyc* provides an intuitive and hassle-free starting point for Cycle.js applications. It comes with production and development webpack configurations, dynamic hot reloading, Babel transpilation, unintrusive long-term caching, and an isomorphic express server. The *tk-cyc* boilerplate is scalable, convenient, and highly modular.
 
-*cyc* provides an intuitive and hassle-free starting point for Cycle.js applications. It comes with production and development webpack configurations, dynamic hot reloading, Babel transpilation, unintrusive long-term caching, and an isomorphic express server. The *cyc* boilerplate is scalable, convenient, and highly modular.
-
-[Live Preview](http://edge.github.io/cyc/)
 
 ## Contents
 - [Features](#features)
@@ -32,15 +27,15 @@
 ## Installing
 
 ```sh
-$ npm install -g cyc-cli babel-cli
+$ npm install -g tk-cyc-cli babel-cli
 ```
 
 ## Getting Started
 
-Run `cyc` in any directory, and you will be prompted for the name of your project, and what directory to put it in. The directory name defaults to the project name.
+Run `tkcyc` in any directory, and you will be prompted for the name of your project, and what directory to put it in. The directory name defaults to the project name.
 
 ```sh
-$ cyc
+$ tkcyc
   Application Name myapp
   Directory (myapp)
   Copying...
