@@ -34,6 +34,7 @@ declare var module: any;
 // };
 import { run } from '@cycle/most-run';
 import { makeDOMDriver } from '@cycle/dom';
+import { makeHTTPDriver } from '@cycle/http';
 import { makeRouterDriver } from 'cyclic-router';
 import Main from './Main';
 
@@ -42,6 +43,7 @@ const switchPath: any = require('switch-path');
 
 const drivers: any = {
   DOM: makeDOMDriver('#root'),
+  HTTP: makeHTTPDriver(),
   router: makeRouterDriver(createHistory(), switchPath),
 };
 

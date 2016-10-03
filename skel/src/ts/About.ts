@@ -1,11 +1,9 @@
 import { just, Stream } from 'most';
 import { div, br, i, button, h2, h4, VNode } from '@cycle/dom';
 import { DOMSource } from '@cycle/dom/most-typings';
-import { RouterSource } from 'cyclic-router/most-typings';
 
 export type Sources = {
   DOM: DOMSource,
-  router: RouterSource,
 };
 export type Sinks = {
   DOM: Stream<VNode>,

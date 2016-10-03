@@ -20,7 +20,7 @@
   "include": [
     "src/ts/**/*"
   ],
-  "exlude": [
+  "exclude": [
     "node_modules"
   ],
   "filesGlob": [

@@ -2,11 +2,9 @@
 import { combine, Stream } from 'most';
 import { div, br, label, input, VNode } from '@cycle/dom';
 import { DOMSource } from '@cycle/dom/most-typings';
-import { RouterSource } from 'cyclic-router/most-typings';
 
 export type Sources = {
   DOM: DOMSource,
-  router: RouterSource,
 };
 export type Sinks = {
   DOM: Stream<VNode>,
