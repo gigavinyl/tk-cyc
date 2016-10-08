@@ -1,5 +1,5 @@
 import w from 'webpack';
-import { loaders, productionPlugins } from './wp.constants';
+import { loaders, productionPlugins } from './webpack.constants';
 import nodeExternals from 'webpack-node-externals';
 
 export default {

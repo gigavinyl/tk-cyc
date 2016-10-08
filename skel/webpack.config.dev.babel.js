@@ -1,5 +1,5 @@
 import w, { optimize as oz } from 'webpack';
-import { entry, clientOutput, loaders } from './wp.constants';
+import { entry, clientOutput, loaders } from './webpack.constants';
 
 export default {
 	entry,

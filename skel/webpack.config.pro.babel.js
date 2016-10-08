@@ -1,5 +1,5 @@
 import w from 'webpack';
-import { entry, clientOutput, loaders, productionPlugins } from './wp.constants';
+import { entry, clientOutput, loaders, productionPlugins } from './webpack.constants';
 import { join } from 'path';
 import { writeFileSync } from 'fs';
 

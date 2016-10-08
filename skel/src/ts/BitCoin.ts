@@ -2,11 +2,10 @@
 import { just, combine, Stream } from 'most';
 import { div, p, VNode } from '@cycle/dom';
 import { RequestInput } from '@cycle/http';
-// import { HTTPSource } from '@cycle/http/most-typings';
+import { HTTPSource } from '@cycle/http/most-typings';
 
 export type Sources = {
-  HTTP: any,
-  // HTTP: HTTPSource
+  HTTP: HTTPSource
 };
 export type Sinks = {
   DOM: Stream<VNode>,
@@ -26,9 +25,9 @@ export default function BitCoin(sources: Sources): Sinks {
 
   const vdom$ = combine((time: string, usd: string) => {
     return div('.p2.measure', [
-      p(`As of ${time}, Bitcoin is trading at ${usd} USD.`),
+      p([`As of ${time}, Bitcoin is trading at ${usd} USD.`]),
     ]);
-  }, time$, usd$);
+  }, time$, usd$).startWith((div('.p2.measure', [p('.loading', ['Loading'])])));
 
   return {
     DOM: vdom$,
